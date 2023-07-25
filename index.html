@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sign-up Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  
+  <div id="main">
+    <div id="left-banner">
+      <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="picture of a fernlike plant" id="left-banner-plant">
+      <div id="left-banner-container">
+        <img src="images/odin-lined.png" alt="logo" id="left-banner-logo">
+        <p id="logo-text">marmot</p>
+      </div>
+      <a id="image-ref" href="https://unsplash.com/photos/25xggax4bSA">Image source</a>
+    </div>
+    <div id="right-content">
+      <p id="top-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend justo non vulputate egestas. Aliquam
+        mauris nisi, laoreet sit amet lectus in, euismod ullamcorper sapien. </p>
+      <form action="https://httpbin.org/post" method="post" id="regForm">
+        <fieldset>
+
+          <div>
+            <div><label for="fname">FIRST NAME</label></div>
+            <input type="text" id="fname" name="first name" required>
+
+            <div><label for="lname">LAST NAME</label></div>
+            <input type="text" id="lname" name="last name" required>
+
+            <div><label for="email">EMAIL</label></div>
+            <input type="email" id="email" name="email address" required>
+          </div>
+          
+          <div>
+            <div><label for="tel">PHONE NUMBER</label></div>
+            <input type="tel" id="tel" name="phone number" required>
+            
+            <div><label for="pword">PASSWORD</label></div>
+            <input type="password" id="pword" class="pwords" name="pw" required>
+            <div id="missmatch-msg"></div>
+
+            <div><label for="pword-conf">CONFIRM PASSWORD</label></div>
+            <input type="password" id="pword-conf" class="pwords">
+          </div>
+
+        </fieldset>
+
+        <button type="submit" id="submit">Create Account</button>
+      </form>
+      <p id="login-p">Already have an account? <a href="">Log in</a> </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
