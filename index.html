@@ -26,21 +26,21 @@
 
           <div>
             <div><label for="fname">FIRST NAME</label></div>
-            <input type="text" id="fname" name="first name" required>
+            <input required type="text" id="fname" name="first name">
 
             <div><label for="lname">LAST NAME</label></div>
-            <input type="text" id="lname" name="last name" required>
+            <input required type="text" id="lname" name="last name">
 
             <div><label for="email">EMAIL</label></div>
-            <input type="email" id="email" name="email address" required>
+            <input required type="email" id="email" name="email address">
           </div>
           
           <div>
             <div><label for="tel">PHONE NUMBER</label></div>
-            <input type="tel" id="tel" name="phone number" required>
+            <input required pattern="([0-9]{3}[ \.\-]?){2}[0-9]{4}" type="tel" id="tel" name="phone number">
             
             <div><label for="pword">PASSWORD</label></div>
-            <input type="password" id="pword" class="pwords" name="pw" required>
+            <input required type="password" id="pword" class="pwords" name="pw">
             <div id="missmatch-msg"></div>
 
             <div><label for="pword-conf">CONFIRM PASSWORD</label></div>
