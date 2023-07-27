@@ -97,6 +97,7 @@ input {
   margin: 0px 40px 15px 0px;
   border: 1px solid #E5E7EB;
   border-radius: 2px;
+  outline: 0px;
 }
 
 #login-p {
@@ -159,8 +160,4 @@ fieldset>div:nth-child(2) {
 form input:focus {
   border: 1px solid #1d4ed8;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-input {
-  outline: 0px;
 }
